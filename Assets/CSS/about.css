@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  background-color: #111111;
+  font-family: "Poppins";
+  color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  .moi {
+    color: #FFB300;
+  }
+  .infos .title {
+    font-size: 11px;
+  }
+  .infos .value {
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .infos .btn {
+    color: white;
+    font-size: 10px;
+    background-color: #272726;
+    border-color: #FFB300;
+    border-radius: 20px;
+    font-weight: bold;
+    height: 32px;
+    width: 160px;
+  }
+  .infos .btn span {
+    float: right;
+    margin-right: -14px;
+  }
+  .infos .btn span img {
+    margin-top: -6px;
+    width: 30px;
+  }
+  .realisations .box {
+    border: 1px solid #272726;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 5px 15px;
+  }
+  .realisations .value {
+    color: #FFB300;
+    font-size: 19px;
+    font-weight: bold;
+  }
+  .realisations .title {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .competences .comp {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .competences .comp img {
+    width: 90px;
+  }
+  .competences .comp img h2 {
+    margin-top: 5px;
+  }
+  .competences .hr {
+    color: #FFB300;
+    position: relative;
+    left: 30%;
+    margin: 50px 10px;
+  }
+  .competences .parcours-experiences .parcours-item, .competences .parcours-experiences .experiences-item {
+    margin-top: 20px;
+  }
+  .competences .parcours-experiences .parcours-title, .competences .parcours-experiences .experiences-title {
+    font-weight: bold;
+  }
+  .competences .parcours-experiences .parcours-desc, .competences .parcours-experiences .experiences-desc {
+    font-size: 12px;
+  }
+  .competences .parcours-experiences .experiences-title .date {
+    font-weight: normal;
+  }
+  .competences .menu .col {
+    border: 1px solid #272726;
+    min-width: 57px;
+    min-height: 57px;
+    margin: 7px 8px;
+    padding-top: 12px;
+    border-radius: 50% 50%;
+  }
+  .competences .menu .icone-about {
+    color: white;
+    background-color: #FFB300;
+  }
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+$primary : #111111;
+$secondary : #FFB300;
+$thirst: #272726;
+body{
+    background-color: $primary;
+    font-family: "Poppins";
+    color:white;
+}
+@media only screen and (max-width: 400px){      
+    .moi{
+        color: $secondary;
+    }
+    .infos{
+        .title{
+            font-size: 11px;
+        }
+        .value{
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .btn{
+            color: white;
+            font-size: 10px;
+            background-color: $thirst;
+            border-color: $secondary;
+            border-radius: 20px;
+            font-weight: bold;
+            height: 32px;
+            width: 160px;
+            span{
+                float: right;
+                margin-right: -14px;
+                img{
+                    margin-top: -6px;
+                    width: 30px;
+                }
+            }
+        }
+    }
+    .realisations{
+        .box{
+            border: 1px solid $thirst;
+            border-radius: 5px;
+            padding: 10px 10px;
+            margin: 5px 15px ;
+        }
+        .value{
+            color: $secondary;
+            font-size: 19px;
+            font-weight: bold;
+        }
+        .title{
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+    }
+    .competences{
+        .comp{
+            margin-top: 15px;
+            text-align: center;
+            img{
+                width: 90px;
+            h2{
+                margin-top: 5px;
+            }
+        }
+    }
+    .hr{
+        color: $secondary;
+        position: relative;
+        left: 30%;
+        margin: 50px 10px;
+    }
+    .parcours-experiences{
+        .parcours-item{
+            margin-top: 20px;
+        }
+        .parcours-title{
+            font-weight: bold;
+        }
+        .parcours-desc{
+            font-size: 12px;
+        }
+        .experiences-item{
+            @extend .parcours-item;
+        }
+        .experiences-title{
+            @extend .parcours-title;
+            .date{
+                font-weight: normal;
+            }
+        }
+        .experiences-desc{
+            @extend .parcours-desc;
+        }
+    }
+    .menu{
+        .col{
+            border: 1px solid $thirst;
+            min-width: 57px;
+            min-height: 57px;
+            margin: 7px 8px ;
+            padding-top: 12px;
+            border-radius : 50% 50%;
+        }
+        .icone-about{
+            color:white;
+            background-color:$secondary ;
+        }
+    }
+
+}
+}
