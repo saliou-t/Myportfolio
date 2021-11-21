@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  background-color: #111111;
+  font-family: "Poppins";
+  color: white;
+}
+
+.contact .moi {
+  color: #FFB300;
+}
+
+.contact h1 {
+  color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  .contact .info .icon {
+    width: 28px;
+  }
+  .contact .info .info-item {
+    margin-top: 14px;
+    font-size: 12px;
+  }
+  .contact .info .info-item span {
+    color: gray;
+  }
+  .contact .info .info-item a {
+    color: white;
+    text-decoration: none;
+  }
+  .contact input, .contact textarea {
+    background-color: #272726;
+    border: 1px solid #FFB300;
+    margin-top: 22px;
+    border-radius: 20px;
+    color: white;
+    width: 290px;
+  }
+  .contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+    color: white;
+    font-size: 13px;
+    padding: 0px 20px;
+  }
+  .contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
+    color: white;
+    font-size: 13px;
+    padding: 0px 20px;
+  }
+  .contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder {
+    color: white;
+    font-size: 13px;
+    padding: 0px 20px;
+  }
+  .contact input::placeholder, .contact textarea::placeholder {
+    color: white;
+    font-size: 13px;
+    padding: 0px 20px;
+  }
+  .contact .btn {
+    background-color: #FFB300;
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .contact .menu {
+    margin-top: 20px;
+  }
+  .contact .menu .col {
+    border: 1px solid #272726;
+    min-width: 57px;
+    min-height: 57px;
+    margin: 7px 8px;
+    padding-top: 12px;
+    border-radius: 50% 50%;
+  }
+  .contact .menu .icone-contact {
+    color: white;
+    background-color: #FFB300;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
