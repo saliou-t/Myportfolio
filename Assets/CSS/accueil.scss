@@ -9,7 +9,7 @@ body{
 .accueil{
     @media only screen and (max-width: 400px){
         .ma-photo{
-            background-image: url("http://placehold.it/150x150");
+            background-image: url("../IMG/moi.JPG");
             background-size: cover;
             border: 3px solid $thirst;
             border-radius: 50% 50%;

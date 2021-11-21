@@ -6,7 +6,7 @@ body {
 
 @media only screen and (max-width: 400px) {
   .accueil .ma-photo {
-    background-image: url("http://placehold.it/150x150");
+    background-image: url("../IMG/moi.JPG");
     background-size: cover;
     border: 3px solid #383232;
     border-radius: 50% 50%;
