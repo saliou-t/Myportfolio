@@ -6,55 +6,106 @@ body{
     background-color: $primary;
     font-family: "Poppins";
     color:white;
-}
-.contact{
     .moi{
         color: $secondary;
     }
     h1{
         color: white;
-    }
-    @media only screen and (max-width: 400px){      
-        .info{
-            .icon{
-                width: 28px;
-            }
-            .info-item{
-                margin-top: 14px;
-                font-size: 12px;
-                span{
-                    color: gray;
-                }
-                a{
-                    color: white;
-                    text-decoration: none;
-                }
-            }
+    }  
+}
+.contact{
+    .info{
+        .icon{
+            width: 28px;
         }
-        & input{
-            background-color: $thirst;
-            border: 1px solid $secondary;
-            margin-top: 22px;
-            border-radius: 20px;
-            color: white;
-            width: 290px;
-            &::placeholder{
+        .info-item{
+            margin-top: 16px;
+            font-size: 16px;
+            span{
+                color: gray;
+            }
+            a{
                 color: white;
-                font-size: 13px;
-                padding: 0px 20px;
+                text-decoration: none;
             }
         }
-        & textarea{
-            @extend input
+    }  
+    .btn{
+        background-color:$secondary;
+        color: white;
+        margin-top: 10px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+      
+    & input{
+        background-color: $thirst;
+        border: 1px solid $secondary;
+        margin-top: 22px;
+        border-radius: 20px;
+        color: white;
+        width: 280px;
+        &::placeholder{
+            color:white;
+            font-size: 13px;
+            padding: 0px 20px;
+        }
+    }
+    & textarea{
+        @extend input;
+    }
+
+    @media only screen and (min-width: 401px){
+        .information-perso{
+            padding-left: 130px;
+        }
+        input{
+            margin-top: 30px;
+            min-height: 42px;
+        }
+        .message, .objet{
+            width: 100%;
         }
         .btn{
-            background-color:$secondary;
-            color: white;
-            margin-top: 10px;
-            border-radius: 20px;
-            font-size: 16px;
-            font-weight: bold;
+            margin-top: 48px;
         }
+        .col-2{
+            width: 90px;
+            .icon{
+                width: 50px;
+                height: 60px;
+            }
+        }
+        .menu{
+            margin-top: -126px;
+            .row{
+                display: block;
+                align-items: center;
+                margin-top: 200px;
+                
+                .col{
+                    margin-top: 22px;
+                    border: 1px solid $thirst;
+                    max-width: 87px;
+                    max-height: 87px;
+                    padding: 15px 15px;
+                    padding-top: 12px;
+                    border-radius : 50% 50%;
+                }
+            }
+            .icone-home{
+                color:white;
+                background-color:$secondary ;
+            }
+            .icone-about, .icone-contact{
+                background-color: #000;
+            }
+        } 
+    }
+
+    @media only screen and (max-width: 400px){      
+     
         .menu{
             margin-top: 20px;
             .col{
@@ -70,6 +121,5 @@ body{
                 background-color:$secondary ;
             }
         }
-        
     }
 }

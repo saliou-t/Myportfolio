@@ -5,65 +5,124 @@ body {
   color: white;
 }
 
-.contact .moi {
+body .moi {
   color: #FFB300;
 }
 
-.contact h1 {
+body h1 {
   color: white;
 }
 
-@media only screen and (max-width: 400px) {
-  .contact .info .icon {
-    width: 28px;
-  }
-  .contact .info .info-item {
-    margin-top: 14px;
-    font-size: 12px;
-  }
-  .contact .info .info-item span {
-    color: gray;
-  }
-  .contact .info .info-item a {
-    color: white;
-    text-decoration: none;
+.contact .info .icon {
+  width: 28px;
+}
+
+.contact .info .info-item {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.contact .info .info-item span {
+  color: gray;
+}
+
+.contact .info .info-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact .btn {
+  background-color: #FFB300;
+  color: white;
+  margin-top: 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact input, .contact textarea {
+  background-color: #272726;
+  border: 1px solid #FFB300;
+  margin-top: 22px;
+  border-radius: 20px;
+  color: white;
+  width: 280px;
+}
+
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+  color: white;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+
+.contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
+  color: white;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+
+.contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder {
+  color: white;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+
+.contact input::placeholder, .contact textarea::placeholder {
+  color: white;
+  font-size: 13px;
+  padding: 0px 20px;
+}
+
+@media only screen and (min-width: 401px) {
+  .contact .information-perso {
+    padding-left: 130px;
   }
   .contact input, .contact textarea {
-    background-color: #272726;
-    border: 1px solid #FFB300;
-    margin-top: 22px;
-    border-radius: 20px;
-    color: white;
-    width: 290px;
+    margin-top: 30px;
+    min-height: 42px;
   }
-  .contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
-    color: white;
-    font-size: 13px;
-    padding: 0px 20px;
-  }
-  .contact input:-ms-input-placeholder, .contact textarea:-ms-input-placeholder {
-    color: white;
-    font-size: 13px;
-    padding: 0px 20px;
-  }
-  .contact input::-ms-input-placeholder, .contact textarea::-ms-input-placeholder {
-    color: white;
-    font-size: 13px;
-    padding: 0px 20px;
-  }
-  .contact input::placeholder, .contact textarea::placeholder {
-    color: white;
-    font-size: 13px;
-    padding: 0px 20px;
+  .contact .message, .contact .objet {
+    width: 100%;
   }
   .contact .btn {
-    background-color: #FFB300;
-    color: white;
-    margin-top: 10px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: bold;
+    margin-top: 48px;
   }
+  .contact .col-2 {
+    width: 90px;
+  }
+  .contact .col-2 .icon {
+    width: 50px;
+    height: 60px;
+  }
+  .contact .menu {
+    margin-top: -126px;
+  }
+  .contact .menu .row {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 200px;
+  }
+  .contact .menu .row .col {
+    margin-top: 22px;
+    border: 1px solid #272726;
+    max-width: 87px;
+    max-height: 87px;
+    padding: 15px 15px;
+    padding-top: 12px;
+    border-radius: 50% 50%;
+  }
+  .contact .menu .icone-home {
+    color: white;
+    background-color: #FFB300;
+  }
+  .contact .menu .icone-about, .contact .menu .icone-contact {
+    background-color: #000;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .contact .menu {
     margin-top: 20px;
   }
