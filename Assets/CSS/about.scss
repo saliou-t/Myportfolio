@@ -6,11 +6,28 @@ body{
     background-color: $primary;
     font-family: "Poppins";
     color:white;
-}
-@media only screen and (max-width: 400px){      
+    .realisations{
+        margin-left: 10px;
+        .box{
+            border: 1px solid $thirst;
+            border-radius: 5px;
+            // padding: 10px 10px;
+            // margin: 5px 15px ;
+        }
+        .value{
+            color: $secondary;
+        font-size: 19px;
+        font-weight: bold;
+        }
+        .title{
+            text-transform: uppercase;
+            font-size: 15px;
+        }
+    }
     .moi{
         color: $secondary;
     }
+
     .infos{
         .title{
             font-size: 13px;
@@ -36,80 +53,174 @@ body{
                     width: 30px;
                 }
             }
-        }
-    }
-    .realisations{
-        margin-left: 10px;
-        .box{
-            border: 1px solid $thirst;
-            border-radius: 5px;
-            padding: 10px 10px;
-            margin: 5px 15px ;
-        }
-        .value{
-            color: $secondary;
-            font-size: 19px;
-            font-weight: bold;
-        }
-        .title{
-            text-transform: uppercase;
-            font-size: 15px;
-        }
-    }
-    .competences{
-        .comp{
-            margin-top: 15px;
-            text-align: center;
-            img{
-                width: 90px;
-            h2{
-                margin-top: 5px;
+            a{
+                color: white;
+                text-decoration: none;
             }
         }
     }
-    .hr{
-        color: $secondary;
-        position: relative;
-        left: 30%;
-        margin: 50px 10px;
-    }
-    .parcours-experiences{
-        .parcours-item{
-            margin-top: 20px;
-        }
-        .parcours-title{
-            font-weight: bold;
-        }
-        .parcours-desc{
-            font-size: 12px;
-        }
-        .experiences-item{
-            @extend .parcours-item;
-        }
-        .experiences-title{
-            @extend .parcours-title;
-            .date{
-                font-weight: normal;
+    @media only screen and (min-width: 401px){   
+        .infos{
+            margin-left: 43px;
+            margin: 52px;
+            .title{
+                font-size: 19px;
+                margin: 0px 5px;
+            }
+            .btn{
+                margin-top: 33px;
+                font-size: 15px;
+                height: 42px;
+                width: 200px;  
+                span{
+                    margin-right: -18px;
+                    img{
+                        width: 40px;
+                    }
+                } 
+                &:hover{
+                    color: $thirst;
+                    background-color: $secondary;
+                }
+            }
+        }   
+        .chiffres{
+            .realisations{
+                .box{
+                    margin: 10px 20px;
+                }
+                .value{
+                    font-size: 50px;
+                    border-bottom: 2px solid white;
+                }
+                .title{
+                    font-size: 22px;
+                    padding-left: 65px;
+                }
+            }
+        }   
+        .competences{
+            .comp{
+                img{
+                    width: 120px;
+                    margin-left: 110px;
+                }
+                h3{
+                    margin-bottom: 35px;
+                    text-align: center;
+                }
+            }
+            .parcours-experiences{
+                img{
+                    margin: 10px 0px;
+                }
+                .item-text{
+                    margin-left: 20px;
+                }
+                .item-title{
+                    font-weight: bold;
+                }
+                .item-desc{
+                    // margin-left: 20px;
+                }
+                .parcours{
+                    padding-left: 90px;
+
+                }
+                .experiences{
+                    .item-title{
+                        font-size: 17px;
+                        margin: 10px 0px;
+                    }
+                    .item-title{
+                        .date{
+                            font-weight: normal;
+                        }
+                    }
+                }
             }
         }
-        .experiences-desc{
-            @extend .parcours-desc;
-        }
-    }
-    .menu{
-        .col{
-            border: 1px solid $thirst;
-            min-width: 57px;
-            min-height: 57px;
-            margin: 7px 8px ;
-            padding-top: 12px;
-            border-radius : 50% 50%;
-        }
-        .icone-about{
-            color:white;
-            background-color:$secondary ;
-        }
+      
     }
 
-}
+    @media only screen and (max-width: 400px){      
+       
+        .competences{
+            .comp{
+                margin-top: 15px;
+                text-align: center;
+                img{
+                    width: 90px;
+                    h2{
+                        margin-top: 5px;
+                    }
+                }
+            }
+        .hr{
+            color: $secondary;
+            position: relative;
+            left: 30%;
+            margin: 50px 10px;
+        }
+        .parcours-experiences{
+            .parcours-item{
+                margin-top: 20px;
+            }
+            .parcours-title{
+                font-weight: bold;
+            }
+            .parcours-desc{
+                font-size: 12px;
+            }
+            .experiences-item{
+                @extend .parcours-item;
+            }
+            .experiences-title{
+                @extend .parcours-title;
+                .date{
+                    font-weight: normal;
+                }
+            }
+            .experiences-desc{
+                @extend .parcours-desc;
+            }
+        }
+        .atouts{
+            .col{
+                margin-top: 22Px;
+            }
+            .item{
+                font-weight: bold;
+                .item-number{
+                    background-color: $thirst;
+                    border: 3px solid $secondary;
+                    font-size: 22px;
+                    width: 2px;
+                    margin: 5px 5px;
+                }
+                .item-title{
+                    font-size: 17px;
+                    margin-left: 10px;
+                    text-align: center;
+                }
+            }
+        }
+        .menu{
+            position: sticky;
+            .col{
+                border: 1px solid $thirst;
+                min-width: 57px;
+                min-height: 57px;
+                margin: 7px 8px ;
+                padding-top: 12px;
+                border-radius : 50% 50%;
+            }
+            .icone-about{
+                color:white;
+                background-color:$secondary ;
+            }
+        }
+        
+    }
+    }
 }

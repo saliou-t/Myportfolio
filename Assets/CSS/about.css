@@ -5,82 +5,182 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 400px) {
-  .moi {
-    color: #FFB300;
+body .realisations {
+  margin-left: 10px;
+}
+
+body .realisations .box {
+  border: 1px solid #272726;
+  border-radius: 5px;
+}
+
+body .realisations .value {
+  color: #FFB300;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+body .realisations .title {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+body .moi {
+  color: #FFB300;
+}
+
+body .infos .title {
+  font-size: 13px;
+}
+
+body .infos .value {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+body .infos .btn {
+  color: white;
+  font-size: 10px;
+  background-color: #272726;
+  border-color: #FFB300;
+  border-radius: 20px;
+  font-weight: bold;
+  height: 32px;
+  width: 160px;
+}
+
+body .infos .btn span {
+  float: right;
+  margin-right: -14px;
+}
+
+body .infos .btn span img {
+  margin-top: -6px;
+  width: 30px;
+}
+
+body .infos .btn a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 401px) {
+  body .infos {
+    margin-left: 43px;
+    margin: 52px;
   }
-  .infos .title {
-    font-size: 13px;
-  }
-  .infos .value {
-    font-size: 15px;
-    font-weight: bold;
-  }
-  .infos .btn {
-    color: white;
-    font-size: 10px;
-    background-color: #272726;
-    border-color: #FFB300;
-    border-radius: 20px;
-    font-weight: bold;
-    height: 32px;
-    width: 160px;
-  }
-  .infos .btn span {
-    float: right;
-    margin-right: -14px;
-  }
-  .infos .btn span img {
-    margin-top: -6px;
-    width: 30px;
-  }
-  .realisations {
-    margin-left: 10px;
-  }
-  .realisations .box {
-    border: 1px solid #272726;
-    border-radius: 5px;
-    padding: 10px 10px;
-    margin: 5px 15px;
-  }
-  .realisations .value {
-    color: #FFB300;
+  body .infos .title {
     font-size: 19px;
+    margin: 0px 5px;
+  }
+  body .infos .btn {
+    margin-top: 33px;
+    font-size: 15px;
+    height: 42px;
+    width: 200px;
+  }
+  body .infos .btn span {
+    margin-right: -18px;
+  }
+  body .infos .btn span img {
+    width: 40px;
+  }
+  body .infos .btn:hover {
+    color: #272726;
+    background-color: #FFB300;
+  }
+  body .chiffres .realisations .box {
+    margin: 10px 20px;
+  }
+  body .chiffres .realisations .value {
+    font-size: 50px;
+    border-bottom: 2px solid white;
+  }
+  body .chiffres .realisations .title {
+    font-size: 22px;
+    padding-left: 65px;
+  }
+  body .competences .comp img {
+    width: 120px;
+    margin-left: 110px;
+  }
+  body .competences .comp h3 {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  body .competences .parcours-experiences img {
+    margin: 10px 0px;
+  }
+  body .competences .parcours-experiences .item-text {
+    margin-left: 20px;
+  }
+  body .competences .parcours-experiences .item-title {
     font-weight: bold;
   }
-  .realisations .title {
-    text-transform: uppercase;
-    font-size: 15px;
+  body .competences .parcours-experiences .parcours {
+    padding-left: 90px;
   }
-  .competences .comp {
+  body .competences .parcours-experiences .experiences .item-title {
+    font-size: 17px;
+    margin: 10px 0px;
+  }
+  body .competences .parcours-experiences .experiences .item-title .date {
+    font-weight: normal;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body .competences .comp {
     margin-top: 15px;
     text-align: center;
   }
-  .competences .comp img {
+  body .competences .comp img {
     width: 90px;
   }
-  .competences .comp img h2 {
+  body .competences .comp img h2 {
     margin-top: 5px;
   }
-  .competences .hr {
+  body .competences .hr {
     color: #FFB300;
     position: relative;
     left: 30%;
     margin: 50px 10px;
   }
-  .competences .parcours-experiences .parcours-item, .competences .parcours-experiences .experiences-item {
+  body .competences .parcours-experiences .parcours-item, body .competences .parcours-experiences .experiences-item {
     margin-top: 20px;
   }
-  .competences .parcours-experiences .parcours-title, .competences .parcours-experiences .experiences-title {
+  body .competences .parcours-experiences .parcours-title, body .competences .parcours-experiences .experiences-title {
     font-weight: bold;
   }
-  .competences .parcours-experiences .parcours-desc, .competences .parcours-experiences .experiences-desc {
+  body .competences .parcours-experiences .parcours-desc, body .competences .parcours-experiences .experiences-desc {
     font-size: 12px;
   }
-  .competences .parcours-experiences .experiences-title .date {
+  body .competences .parcours-experiences .experiences-title .date {
     font-weight: normal;
   }
-  .competences .menu .col {
+  body .competences .atouts .col {
+    margin-top: 22Px;
+  }
+  body .competences .atouts .item {
+    font-weight: bold;
+  }
+  body .competences .atouts .item .item-number {
+    background-color: #272726;
+    border: 3px solid #FFB300;
+    font-size: 22px;
+    width: 2px;
+    margin: 5px 5px;
+  }
+  body .competences .atouts .item .item-title {
+    font-size: 17px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  body .competences .menu {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  body .competences .menu .col {
     border: 1px solid #272726;
     min-width: 57px;
     min-height: 57px;
@@ -88,7 +188,7 @@ body {
     padding-top: 12px;
     border-radius: 50% 50%;
   }
-  .competences .menu .icone-about {
+  body .competences .menu .icone-about {
     color: white;
     background-color: #FFB300;
   }

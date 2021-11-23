@@ -113,11 +113,10 @@ body h1 {
     padding-top: 12px;
     border-radius: 50% 50%;
   }
-  .contact .menu .icone-home {
-    color: white;
+  .contact .menu .icone-contact {
     background-color: #FFB300;
   }
-  .contact .menu .icone-about, .contact .menu .icone-contact {
+  .contact .menu .icone-home, .contact .menu .icone-about {
     background-color: #000;
   }
 }

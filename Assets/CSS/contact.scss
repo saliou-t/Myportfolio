@@ -94,11 +94,10 @@ body{
                     border-radius : 50% 50%;
                 }
             }
-            .icone-home{
-                color:white;
+            .icone-contact{
                 background-color:$secondary ;
             }
-            .icone-about, .icone-contact{
+            .icone-home, .icone-about{
                 background-color: #000;
             }
         } 
